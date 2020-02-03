@@ -61,7 +61,9 @@ class CashRegister
   def items
    all_items = [] # returns an array containing all items that have been added
     @items.each do |item|
-      all_items << item[:title]  
+      for qty in 1..item[:qty] #for in loop / times loop 
+        all_items << item[:title]
+      end 
     end
     all_items  
   end
