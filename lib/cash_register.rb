@@ -36,7 +36,7 @@ class CashRegister
           items << title
       
           i += 1
-        end   
+        end
   
    
       
