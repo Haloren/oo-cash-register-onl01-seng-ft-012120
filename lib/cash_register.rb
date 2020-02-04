@@ -54,6 +54,8 @@ class CashRegister
   end
   
   def add_item(title, price, qty=nil)
+    qty.times do
     self.total += price
+  end
   end
 end
