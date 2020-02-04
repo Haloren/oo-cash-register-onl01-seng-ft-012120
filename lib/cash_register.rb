@@ -41,6 +41,7 @@ if qty > 1
   i = 0
   while i < qty 
     items << title
+    total += price
     i += 1
   end   
 else 
