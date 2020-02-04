@@ -53,7 +53,7 @@ class CashRegister
     @discount = discount
   end
   
-  def add_item(title, price, qty=nil)
+  def add_item(title, price, qty=1)
     qty.times do
     self.total += price
   end
