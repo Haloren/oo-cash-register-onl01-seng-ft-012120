@@ -23,7 +23,7 @@ class CashRegister
       total -= @last_transaction
     end
     
-    def add_item(title, price, qty)
+    def add_item(title, price, qty=1)
       if qty > 1 
         i = 0
         while i < qty 
