@@ -26,7 +26,7 @@ class CashRegister
       require 'pry'
       #binding.pry
       self.total -= @last_transaction
-      self.items.pop
+      2.times{self.items.pop}
     end
     
     def add_item(title, price, qty=1)
