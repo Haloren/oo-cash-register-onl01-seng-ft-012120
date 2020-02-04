@@ -80,6 +80,7 @@ describe 'CashRegister' do
       cash_register.add_item("tomato", 1.76)
       cash_register.void_last_transaction
       expect(cash_register.total).to eq(0.99)
+      expect(cash_register.items).to eq(["apple"])
     end
 
     it 'returns the total to 0.0 if all items have been removed' do
