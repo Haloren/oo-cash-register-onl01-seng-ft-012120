@@ -4,7 +4,7 @@ class Integer
   def times
     counter = 0
     while counter < self
-    
+      yield
       counter += 1
     end
   end
