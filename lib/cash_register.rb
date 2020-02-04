@@ -38,7 +38,7 @@ class CashRegister
           i += 1
         end   
   
-      end
+   
       
       qty.times do
         items << title  
