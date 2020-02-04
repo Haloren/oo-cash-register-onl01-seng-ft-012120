@@ -48,3 +48,6 @@ else
   items << title
 end
 total += price * qty
+last_amount_added = price * qty
+last_qty = qty
+
