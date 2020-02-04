@@ -20,6 +20,8 @@ class CashRegister
     
     
     def void_last_transaction
+      require 'pry'
+      binding.pry
       self.total -= @last_transaction
       self.items.pop
     end
