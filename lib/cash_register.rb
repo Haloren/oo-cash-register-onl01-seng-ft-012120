@@ -41,7 +41,7 @@ class CashRegister
         items << title
       end
       total += price * qty
-      last_transaction = price * qty
+      @last_transaction = price * qty
       last_qty = qty
     end
 
