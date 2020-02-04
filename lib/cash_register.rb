@@ -43,3 +43,7 @@
 #     end
 
 # end
+
+class CashRegister
+  
+end
