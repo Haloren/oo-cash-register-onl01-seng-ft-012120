@@ -18,6 +18,9 @@ class CashRegister
       @total == 0? "There is no discount to apply." : "After the discount, the total comes to $#{@total = @total * 80/100}."
     end 
     
+    def total=(num)
+      @total = num.round(2)  
+    end
     
     def void_last_transaction
       require 'pry'
