@@ -31,6 +31,7 @@ class CashRegister
 
 end
 
+title = "apple"
 items = []
 qty = 3
 if qty > 1 
