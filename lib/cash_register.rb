@@ -31,13 +31,14 @@ class CashRegister
 
 end
 
+items = []
 qty = 3
 if qty > 1 
   count_title = 0
   while count_title < qty 
-    @items << title 
+    items << title 
     count_title += 1
   end   
 else 
-  @items << title
+  items << title
 end   
