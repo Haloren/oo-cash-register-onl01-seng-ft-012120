@@ -34,8 +34,6 @@ class CashRegister
       else 
         items << title
       end
-      require 'pry'
-      binding.pry
       self.total += price * qty
       @last_transaction = price * qty
       @last_qty = qty
