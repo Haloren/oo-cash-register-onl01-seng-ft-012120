@@ -1,5 +1,7 @@
 class Integer
-  
+  def times
+    binding.pry
+  end
 end
 
 
