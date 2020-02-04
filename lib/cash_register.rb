@@ -40,9 +40,9 @@ class CashRegister
   
    
       
-      qty.times do
-        items << title  
-      end
+      #qty.times do
+      #  items << title  
+      #end
       self.total += price * qty
       @last_transaction = price * qty
     
