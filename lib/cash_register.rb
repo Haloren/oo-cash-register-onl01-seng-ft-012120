@@ -2,7 +2,11 @@ require 'pry'
 
 class Integer
   def times
-    binding.pry
+    counter = 0
+    while counter < self
+    
+      counter += 1
+    end
   end
 end
 
