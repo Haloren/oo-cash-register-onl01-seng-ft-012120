@@ -21,9 +21,9 @@ class CashRegister
     def total=(num)
       @total = num.round(2)  
     end
-    
+    require 'pry'
     def void_last_transaction
-      require 'pry'
+      
       #binding.pry
       self.total -= @last_transaction
       @last_qty.times{self.items.pop}
