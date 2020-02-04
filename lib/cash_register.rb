@@ -34,14 +34,6 @@ class CashRegister
     
     def add_item(title, price, qty=1)
      
-        # i = 0
-        # while i < qty 
-        #   items << title
-      
-        #   i += 1
-        # end
-  
- 
       
       qty.times do
         items << title  
