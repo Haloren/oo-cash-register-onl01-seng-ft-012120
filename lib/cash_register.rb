@@ -21,6 +21,8 @@ class CashRegister
     
     def void_last_transaction
       self.total -= @last_transaction
+      require 'pry'
+      binding.pry
     end
     
     def add_item(title, price, qty=1)
