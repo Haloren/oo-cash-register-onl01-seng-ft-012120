@@ -34,10 +34,10 @@ end
 items = []
 qty = 3
 if qty > 1 
-  count_title = 0
-  while count_title < qty 
+  i = 0
+  while i < qty 
     items << title 
-    count_title += 1
+    i += 1
   end   
 else 
   items << title
