@@ -40,25 +40,3 @@ class CashRegister
     end
 
 end
-
-total = 0
-title = "apple"
-items = []
-price = 2
-qty = 3
-def add_item(title, price, qty)
-  if qty > 1 
-    i = 0
-    while i < qty 
-      items << title
-  
-      i += 1
-    end   
-  else 
-    items << title
-  end
-  total += price * qty
-  last_amount_added = price * qty
-  last_qty = qty
-end
-
