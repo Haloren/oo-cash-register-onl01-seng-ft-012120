@@ -20,7 +20,7 @@ class CashRegister
     
     
     def void_last_transaction
-      
+      self.total -= @last_transaction
     end
     
     def add_item(title, price, qty=1)
