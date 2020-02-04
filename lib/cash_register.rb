@@ -36,7 +36,7 @@ class CashRegister
       end
       require 'pry'
       binding.pry
-      total += price * qty
+      self.total += price * qty
       @last_transaction = price * qty
       @last_qty = qty
     end
