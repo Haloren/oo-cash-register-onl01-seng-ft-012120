@@ -47,7 +47,7 @@ class CashRegister
           i += 1
         end
   
-    binding.pry
+ 
       
       #qty.times do
       #  items << title  
