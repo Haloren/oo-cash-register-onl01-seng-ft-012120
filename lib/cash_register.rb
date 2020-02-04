@@ -30,15 +30,10 @@ class CashRegister
     end
     
     def add_item(title, price, qty=1)
-      if qty > 1 
-        i = 0
-        while i < qty 
-          items << title
       
-          i += 1
-        end   
-      else 
-        items << title
+      
+      qty.times do
+        items << title  
       end
       self.total += price * qty
       @last_transaction = price * qty
