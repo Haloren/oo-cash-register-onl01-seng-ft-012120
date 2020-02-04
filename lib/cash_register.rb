@@ -27,7 +27,23 @@ class CashRegister
       @last_transaction[2].times do
         @items.delete_at(@items.index(@last_transaction[0]) || @items.count)
       end   
-    end       
+    end
+    
+    def add_item(title, price, qty)
+      if qty > 1 
+        i = 0
+        while i < qty 
+          items << title
+      
+          i += 1
+        end   
+      else 
+        items << title
+      end
+      total += price * qty
+      last_amount_added = price * qty
+      last_qty = qty
+    end
 
 end
 
@@ -36,18 +52,19 @@ title = "apple"
 items = []
 price = 2
 qty = 3
-
-if qty > 1 
-  i = 0
-  while i < qty 
+def add_item(title, price, qty)
+  if qty > 1 
+    i = 0
+    while i < qty 
+      items << title
+  
+      i += 1
+    end   
+  else 
     items << title
-
-    i += 1
-  end   
-else 
-  items << title
+  end
+  total += price * qty
+  last_amount_added = price * qty
+  last_qty = qty
 end
-total += price * qty
-last_amount_added = price * qty
-last_qty = qty
 
