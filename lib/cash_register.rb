@@ -1,3 +1,5 @@
+require 'pry'
+
 class Integer
   def times
     binding.pry
